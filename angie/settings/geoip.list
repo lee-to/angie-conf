@@ -1,0 +1,7 @@
+map "$geoip2_data_country_code" $geoip_block {
+        default no;
+#        ~^DE yes; #Германия
+#        ~^FR yes; #Франция
+#        ~^SG yes; #Сингапур
+#       ~^KZ yes; #
+}
