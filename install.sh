@@ -3,7 +3,7 @@ sudo curl -o /etc/apt/trusted.gpg.d/angie-signing.gpg \
 echo "deb https://download.angie.software/angie/$(. /etc/os-release && echo "$ID/$VERSION_ID $VERSION_CODENAME") main" \
     | sudo tee /etc/apt/sources.list.d/angie.list > /dev/null
 sudo apt update
-sudo apt install -y angie angie-module-{jwt,zip,brotli,zstd,dynamic-limit-req,echo,enhanced-memcached,geoip2,eval,headers-more,subs,testcookie,upload,xslt,cache-purge,auth-jwt}
+sudo apt install -y angie angie-module-{jwt,zip,brotli,zstd,dynamic-limit-req,echo,enhanced-memcached,geoip2,eval,headers-more,subs,testcookie,upload,xslt,cache-purge}
 sudo service angie stop
 sudo cp -r angie/* /etc/angie/
 sudo ln -s -t /etc/angie /usr/lib/angie/modules
